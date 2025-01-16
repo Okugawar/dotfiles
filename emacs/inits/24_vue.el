@@ -1,1 +1,1 @@
-(require 'vue-mode)
+;; (el-get-bundle vue-mode)

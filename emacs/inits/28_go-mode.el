@@ -1,7 +1,6 @@
-(require 'go-mode)
-(add-hook 'go-mode-hook #'lsp)
+(el-get-bundle go-mode)
 
-;; (add-to-list 'auto-mode-alist '("\\.go\\'"  . go-mode))
+(add-to-list 'auto-mode-alist '("\\.go\\'"  . go-mode))
 
 ;; Goのパスを通す
 (add-to-list 'exec-path (expand-file-name "$GOROOT"))

@@ -20,27 +20,12 @@
 (el-get-bundle neotree)
 (el-get-bundle helm)
 (el-get-bundle exec-path-from-shell)
+
 (el-get-bundle markdown-mode)
-(el-get-bundle js2-mode)
-(el-get-bundle typescript-mode)
 (el-get-bundle flycheck)
-(el-get-bundle yaml-mode)
-;; (el-get-bundle vue-mode)
 ;; (el-get-bundle mmm-mode)
-;; (el-get-bundle haskell-mode)
 ;; (el-get-bundle ssass-mode)
 (el-get-bundle vue-html-mode)
-;; (el-get-bundle proof-general)
-(el-get-bundle json-mode)
-(el-get-bundle go-mode)		   
-(el-get-bundle company-mode/company-mode)
-;; (el-get-bundle emacsattic/company-go)
-
-(el-get-bundle emacs-lsp/lsp-mode)
-(el-get-bundle emacs-lsp/lsp-ui)
-(el-get-bundle emacs-lsp/helm-lsp)
-(el-get-bundle emacs-lsp/lsp-java)
-(add-hook 'java-mode-hook #'lsp)
 
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
@@ -51,7 +36,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(desktop-save-mode t)
- '(package-selected-packages '(company-go company-lsp ssass-mode vue-mode)))
+ '(package-selected-packages
+   '(typescript-mode prettier-js prettier lsp-mode company company-go company-lsp ssass-mode vue-mode))
+ '(warning-suppress-types '((el-get))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

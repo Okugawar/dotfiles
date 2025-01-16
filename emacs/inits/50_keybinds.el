@@ -25,3 +25,6 @@
 
 ;; hs-toggle
 (global-set-key (kbd "C-c /") 'hs-toggle-hiding)
+
+;; ¥の代わりにバックスラッシュを入力する
+(define-key global-map [?¥] [?\\])
