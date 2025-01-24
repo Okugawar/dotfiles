@@ -36,8 +36,19 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(desktop-save-mode t)
+ '(lsp-clients-typescript-max-ts-server-memory 2048)
+ '(lsp-diagnostics-provider :flycheck)
+ '(lsp-disabled-clients 'nil)
+ '(lsp-eslint-auto-fix-on-save nil)
+ '(lsp-inlay-hint-enable t)
+ '(lsp-javascript-display-enum-member-value-hints t)
+ '(lsp-javascript-display-parameter-name-hints t)
+ '(lsp-typescript-locale "ja")
+ '(lsp-ui-doc-alignment 'window)
+ '(lsp-ui-doc-show-with-cursor t)
  '(package-selected-packages
-   '(typescript-mode prettier-js prettier lsp-mode company company-go company-lsp ssass-mode vue-mode))
+   '(company-terraform terraform-mode typescript-mode prettier-js prettier lsp-mode company company-go company-lsp ssass-mode vue-mode))
+ '(typescript-indent-level 2)
  '(warning-suppress-types '((el-get))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

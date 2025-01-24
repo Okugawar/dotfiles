@@ -17,7 +17,7 @@
  '(lsp-eslint-auto-fix-on-save nil))
 
 (add-hook 'js2-mode-hook '(lambda ()
-			    (setq tab-width 4)
+			    (setq tab-width 2)
 			    ) t)
 
 (add-hook 'js2-mode-hook 'prettier-js-mode)
@@ -50,7 +50,7 @@
 
 (use-package typescript-mode
   :ensure t
-  :mode ("\\.tsx?'" . typescript-mode)
+  :mode ("\\.tsx?" . typescript-mode)
   :hook
   (my/ts-mode-hook))
 
@@ -62,4 +62,6 @@
 (setq prettier-js-args '(
   "--trailing-comma" "all"
   "--bracket-spacing" "false"
+  "--single-quote" "true"
+  "--print-width" "120"
   ))

@@ -53,7 +53,8 @@
   :hook
   (prog-major-mode . lsp-prog-major-mode-enable)
   (js2-mode . lsp-deferred)
-  (typescript-mode . lsp-deferred))
+  (typescript-mode . lsp-deferred)
+  (terraform-mode . lsp-deferred))
 
 (use-package lsp-ui
   :after lsp-mode
